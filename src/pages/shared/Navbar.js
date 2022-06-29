@@ -3,7 +3,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 // import auth from '../../firebase.init';
-import auth from '../../Firebase.ini'
+import auth from '../../Firebase.init'
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -20,10 +20,8 @@ const Navbar = () => {
     const menuItems = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/parts">All Products</NavLink></li>
-        <li><NavLink to="/blogs">Blogs</NavLink></li>
         <li><NavLink to="/reviews">Reviews</NavLink></li>
-        <li><NavLink to="/myportfolio">Portfolio</NavLink></li>
-
+    
         {user ?
 
             <>
